@@ -15,26 +15,54 @@
     </header>
     <div id="container">
         <h3>Mouse Events</h3>
-        <button id="btn1">Button 1</button>
+        <button id="btn1" class= "btnClass">Button 1</button>
         <button id="btn2">Button 2</button>
         <p class="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In pellentesque massa placerat duis ultricies. Sit amet commodo nulla facilisi nullam vehicula ipsum a arcu. Maecenas accumsan lacus vel facilisis. Fermentum posuere urna nec tincidunt praesent semper feugiat. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Et tortor consequat id porta nibh. Enim nec dui nunc mattis. Varius duis at consectetur lorem donec massa. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus.</p>
+        <h1 id="coords"></h1>
     </div>
     
-    <script>
+    <script>    
+        // Events
         $(document).ready(function(){
-            $('#btn1').click(function(){
-                // $('.para1').hide();
-                $('.para1').toggle();
+        //     $('#btn1').click(function(){
+        //         // $('.para1').hide();
+        //         $('.para1').toggle();
+        //     });    
 
-            });    
+        //     $('#btn2').click(function(){
+        //         $('.para1').show();
+        //     }); 
 
-            $('#btn2').click(function(){
-                $('.para1').show();
+        //  $('#btn1').dblclick(function(){
+        //     $('.para1').toggle();
+        // });
 
-            });    
+        //   $('#btn1').hover(function(){
+        //     $('.para1').toggle();
+        //  }); 
 
-            
+        // $('#btn1').mousedown(function(){
+        //     $('.para1').toggle();
+        //  });   
+
+        //  $('#btn1').mouseup(function(){
+        //     $('.para1').toggle();  
+        //  });
+
+        //  $('#btn1').click(function(e){
+            //    alert(e.currentTarget.id);
+            //    alert(e.currentTarget.innerHTML);
+            // alert(e.currentTarget.outerHTML);
+            // alert(e.currentTarget.className);
+            // }); 
+
+         $(document).mousemove(function(e){
+            $('#coords').html('Coords: Y: ' + e.clientY + 'X: '+e.clientX); 
+         });
+
         });
+
+
 
     </script>
 
