@@ -7,7 +7,7 @@
     <title>jQuery Crash Course</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
+    <script src="js/main.js"></script>
 </head>
 <body>
     <header>
@@ -18,53 +18,25 @@
         <button id="btn1" class= "btnClass">Button 1</button>
         <button id="btn2">Button 2</button>
         <p class="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In pellentesque massa placerat duis ultricies. Sit amet commodo nulla facilisi nullam vehicula ipsum a arcu. Maecenas accumsan lacus vel facilisis. Fermentum posuere urna nec tincidunt praesent semper feugiat. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Et tortor consequat id porta nibh. Enim nec dui nunc mattis. Varius duis at consectetur lorem donec massa. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus.</p>
-        <h1 id="coords"></h1>
-    </div>
-    
-    <script>    
-        // Events
-        $(document).ready(function(){
-        //     $('#btn1').click(function(){
-        //         // $('.para1').hide();
-        //         $('.para1').toggle();
-        //     });    
-
-        //     $('#btn2').click(function(){
-        //         $('.para1').show();
-        //     }); 
-
-        //  $('#btn1').dblclick(function(){
-        //     $('.para1').toggle();
-        // });
-
-        //   $('#btn1').hover(function(){
-        //     $('.para1').toggle();
-        //  }); 
-
-        // $('#btn1').mousedown(function(){
-        //     $('.para1').toggle();
-        //  });   
-
-        //  $('#btn1').mouseup(function(){
-        //     $('.para1').toggle();  
-        //  });
-
-        //  $('#btn1').click(function(e){
-            //    alert(e.currentTarget.id);
-            //    alert(e.currentTarget.innerHTML);
-            // alert(e.currentTarget.outerHTML);
-            // alert(e.currentTarget.className);
-            // }); 
-
-         $(document).mousemove(function(e){
-            $('#coords').html('Coords: Y: ' + e.clientY + 'X: '+e.clientX); 
-         });
-
-        });
-
-
-
-    </script>
-
+        <!-- <h1 id="coords"></h1> -->
+        <hr>
+        <h3>Form Events</h3>
+        <form id= "form">
+            <label>Name</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label>Email</label>
+            <input type="text" id="email" name="email">
+            <br>
+            <label>Gender</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <br>
+            <input type="submit" value="submit">            
+        </form>
+    </div> 
+   
 </body>
 </html>
