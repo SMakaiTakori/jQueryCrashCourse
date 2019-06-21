@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Crash Course</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>jQuery Crash Course</h1>
+    </header>
+    <div id="container">
+        <h3>Mouse Events</h3>
+        <button id="btn1">Button 1</button>
+        <button id="btn2">Button 2</button>
+        <p class="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In pellentesque massa placerat duis ultricies. Sit amet commodo nulla facilisi nullam vehicula ipsum a arcu. Maecenas accumsan lacus vel facilisis. Fermentum posuere urna nec tincidunt praesent semper feugiat. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Et tortor consequat id porta nibh. Enim nec dui nunc mattis. Varius duis at consectetur lorem donec massa. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus.</p>
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                // $('.para1').hide();
+                $('.para1').toggle();
+
+            });    
+
+            $('#btn2').click(function(){
+                $('.para1').show();
+
+            });    
+
+            
+        });
+
+    </script>
+
+</body>
+</html>
